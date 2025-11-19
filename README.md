@@ -1,75 +1,15 @@
-# Nuxt Minimal Starter
+# My Shangri-La Referendum (MSLR)
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## About
+My Shangri-La Referendum is a full-stack web application designed to support a local council in gathering the publics view on some proposed changes to the expansion of its administrative boundaries to neighoburing counties.
 
-## Setup
+## Usage
+### Vercel Deployment
+The vercel deployment of the application can be found at [text](https://mslreferendum.vercel.app/).
+The Vercel deployment uses a persistent MongoDB database for storage; as a result, all inputs used for testing will be available when visiting this deployment and app can be used as if it is a real world service.
 
-Make sure to install dependencies:
+### Local Deployment
+Currently Work in Progress
 
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Stack
+NuxtJS+Vue, NodeJS, TypeScript, MongoDB, ESLint+Prettier, Vercel 
