@@ -17,4 +17,4 @@ To run the app in development mode
 To run the app in production preview mode (no dev tools)
 
 ## Stack
-NuxtJS+Vue, NodeJS, TypeScript, MongoDB, ESLint+Prettier, Vercel 
+NuxtJS/Vue, NodeJS, TypeScript, Tailwind/shadcn, MongoDB, ESLint+Prettier, Vercel 

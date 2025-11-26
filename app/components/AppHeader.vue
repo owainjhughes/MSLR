@@ -1,19 +1,36 @@
-<template>
-  <header>
-    <nav>
-      <h2>MSLR</h2>
-      <ul>
-        <li><NuxtLink to="/">Home</NuxtLink></li>
-        <li><NuxtLink to="/about">About</NuxtLink></li>
-        <li><NuxtLink to="/login">Login</NuxtLink></li>
-      </ul>
-    </nav>
-  </header>
-</template>
+<script setup lang="ts">
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu";
+</script>
 
-<style scoped>
-header { padding: 1px; background: #f5f5f5; }
-nav { display:flex; align-items:center; justify-content:space-between }
-ul { list-style:none; margin:0; padding:0; display:flex; gap:1rem }
-a { text-decoration:none; color:inherit }
-</style>
+<template>
+  <NavigationMenu :viewport="false" class="px-4">
+    <NavigationMenuList>
+      <NavigationMenuItem>
+        <NavigationMenuLink as-child :class="navigationMenuTriggerStyle()">
+          <a href="/">Home</a>
+        </NavigationMenuLink>
+      </NavigationMenuItem>
+      <NavigationMenuItem>
+        <NavigationMenuLink as-child :class="navigationMenuTriggerStyle()">
+          <a href="/about">About</a>
+        </NavigationMenuLink>
+      </NavigationMenuItem>
+      <NavigationMenuItem>
+        <NavigationMenuLink as-child :class="navigationMenuTriggerStyle()">
+          <a href="/login">Log in</a>
+        </NavigationMenuLink>
+      </NavigationMenuItem>
+      <NavigationMenuItem>
+        <NavigationMenuLink as-child :class="navigationMenuTriggerStyle()">
+          <a href="/signup">Sign up</a>
+        </NavigationMenuLink>
+      </NavigationMenuItem>
+    </NavigationMenuList>
+  </NavigationMenu>
+</template>
